@@ -1,5 +1,8 @@
-<?php
-$I = new \AcceptanceTester\CRMOperatorSteps($scenario);
+<?php 
+use Step\Acceptance\CRMOperatorSteps as CRMOperator;
+use Step\Acceptance\CRMUserSteps as CRMUser;
+
+$I = new CRMOperator($scenario);
 $I->wantTo('add two different customers to database');
 
 $I->amInAddCustomerUi();
@@ -16,7 +19,7 @@ $I->submitCustomerDataForm();
 
 $I->seeIAmInListCustomersUi();
 
-$I = new \AcceptanceTester\CRMUserSteps($scenario);
+$I = new CRMUser($scenario);
 $I->wantTo('query the customer info using his phone number');
 
 $I->amInQueryCustomerUi();
