@@ -1,6 +1,7 @@
 {
     "require": {
         "codeception/codeception": "*",
-        "fzaninotto/faker": "^1.5"
+        "fzaninotto/faker": "^1.5",
+        "yiisoft/yii2": "*"
     }
 }
